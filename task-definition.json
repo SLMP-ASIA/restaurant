@@ -50,7 +50,7 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:251754556917:task-definition/SLMP-TASK1:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:251754556917:task-definition/SLMP-TASK1:4",
   "family": "SLMP-TASK1",
   "requiresAttributes": [
     {
