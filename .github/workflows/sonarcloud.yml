@@ -30,11 +30,10 @@ name: SonarCloud analysis
 
 on:
   push:
-    branches: [ master ]
+    branches: [ "master" ]
 
 permissions:
   pull-requests: read # allows SonarCloud to decorate PRs with analysis results
-  push-requests: read, write
 
 jobs:
   Analysis:
