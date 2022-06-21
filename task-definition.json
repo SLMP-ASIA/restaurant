@@ -1,19 +1,11 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::251754556917:role/ecsTaskExecutionRole",
+  "executionRoleArn": null,
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
       "environmentFiles": null,
-      "logConfiguration": {
-        "logDriver": "awslogs",
-        "secretOptions": null,
-        "options": {
-          "awslogs-group": "/ecs/SLMP-TASK2",
-          "awslogs-region": "us-east-2",
-          "awslogs-stream-prefix": "ecs"
-        }
-      },
+      "logConfiguration": null,
       "entryPoint": null,
       "portMappings": [],
       "command": null,
@@ -31,7 +23,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "251754556917.dkr.ecr.us-east-2.amazonaws.com/restaurant:latest",
+      "image": "251754556917.dkr.ecr.us-east-2.amazonaws.com/restaurant:2ad402fca3fdc1cee1de8d704c585cf600dffbb6",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -52,68 +44,29 @@
     }
   ],
   "placementConstraints": [],
-  "memory": "512",
+  "memory": "1",
   "taskRoleArn": null,
   "compatibilities": [
-    "EC2",
-    "FARGATE"
+    "EXTERNAL",
+    "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:251754556917:task-definition/SLMP-TASK2:1",
-  "family": "SLMP-TASK2",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:251754556917:task-definition/SLMP-TASK1:1",
+  "family": "SLMP-TASK1",
   "requiresAttributes": [
     {
       "targetId": null,
       "targetType": null,
       "value": null,
-      "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "ecs.capability.execution-role-awslogs"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
       "name": "com.amazonaws.ecs.capability.ecr-auth"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "ecs.capability.execution-role-ecr-pull"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "ecs.capability.task-eni"
     }
   ],
   "pidMode": null,
   "requiresCompatibilities": [
-    "FARGATE"
+    "EC2"
   ],
-  "networkMode": "awsvpc",
-  "runtimePlatform": {
-    "operatingSystemFamily": "LINUX",
-    "cpuArchitecture": null
-  },
-  "cpu": "256",
+  "networkMode": null,
+  "runtimePlatform": null,
+  "cpu": "2048",
   "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
