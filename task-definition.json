@@ -64,7 +64,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:953421068655:task-definition/adopt-apaw-task:6",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:953421068655:task-definition/adopt-apaw-task:1",
   "family": "adopt-apaw-task",
   "requiresAttributes": [
     {
